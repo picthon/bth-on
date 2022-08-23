@@ -48,8 +48,8 @@ DELETE_TIMEOUT = 1
 USERID = bot.uid if Config.OWNER_ID == 0 else Config.OWNER_ID
 ALIVE_NAME = Config.ALIVE_NAME
 thumb_image_path = os.path.join(Config.TMP_DOWNLOAD_DIRECTORY, "thumb_image.jpg")
-ZEDPIC = gvarstatus("ALIVE_PIC") or "https://telegra.ph/file/65ac48f0cc4750144bd0d.mp4"
-ZPIC = gvarstatus("ALIVE_PIC") or "https://telegra.ph/file/65ac48f0cc4750144bd0d.mp4"
+ZEDPIC = gvarstatus("ALIVE_PIC") or "https://telegra.ph/file/e45d01cc4a8b66cba94ee.jpg"
+ZPIC = gvarstatus("ALIVE_PIC") or "https://telegra.ph/file/e45d01cc4a8b66cba94ee.jpg"
 Malath = f"**🖥┊لـوحـة اوامـر 𝑹𝑬𝑷𝑻𝑯𝑶𝑵🜑 الشفـافـه **\n**🧑🏻‍💻┊المستخـدم ↶** {mention} \n\n**•❐• قـائمـه الاوامـر الـعـامـه :**\n**•❶• اوامــر الـبحـث والـتحميـل **\n**•❷• اوامــر الـبـوت **\n**•❸• اوامــر الـوقـتـي **\n**•❹• اوامــر الـكــروب¹ **\n**•❺• اوامــر الـكــروب² **\n**•❻• اوامــر الـحسـاب **\n**•❼• اوامــر الميـديـا والـصيــغ **\n**•❽• اوامــر الـفــارات **\n**•❾• اوامــر الخـدمــات **\n**•❿• اوامــر الـتســليــه والالـعـاب **\n\n**•❐• او استخـدم الامـر** `.الأوامر` **لعـرض الاوامـر مع الوصـف**"
 TG_BOT = Config.TG_BOT_USERNAME
 TM = time.strftime("%I:%M")
