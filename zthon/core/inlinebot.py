@@ -31,8 +31,8 @@ LOGS = logging.getLogger(__name__)
 
 BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)\]\<buttonurl:(?:/{0,2})(.+?)(:same)?\>)")
 MEDIA_PATH_REGEX = re.compile(r"(:?\<\bmedia:(:?(?:.*?)+)\>)")
-ZEDLOGO = "https://telegra.ph/file/f821d27af168206b472ad.mp4"
-MALATH_PIC = "https://telegra.ph/file/f821d27af168206b472ad.mp4"
+ZEDLOGO = "https://telegra.ph/file/65ac48f0cc4750144bd0d.mp4"
+MALATH_PIC = "https://telegra.ph/file/65ac48f0cc4750144bd0d.mp4"
 tr = Config.COMMAND_HAND_LER
 
 
@@ -55,7 +55,7 @@ def ibuild_keyboard(buttons):
 
 
 def main_menu():
-    malathy = f"**🖥┊لـوحـة اوامـر 𝗭𝗧𝗵𝗼𝗻 الشفافـه**\
+    malathy = f"**🖥┊لـوحـة اوامـر 𝑹𝑬𝑷𝑻𝑯𝑶𝑵🜑 الشفافـه**\
         \n**🧑🏻‍💻┊المستخـدم ↶** {mention}"
     if Config.OLDZED:
         buttons = [
@@ -259,8 +259,8 @@ async def inline_handler(event):  # sourcery no-metrics
                     Button.url("𝗭𝗧𝗵𝗼𝗻™ 𓅛", "https://t.me/ZedThon"),
                 )
             ]
-            ALIVE_PIC = gvarstatus("ALIVE_PIC") or "https://telegra.ph/file/f821d27af168206b472ad.mp4"
-            IALIVE_PIC = gvarstatus("IALIVE_PIC") or "https://telegra.ph/file/f821d27af168206b472ad.mp4"
+            ALIVE_PIC = gvarstatus("ALIVE_PIC") or "https://telegra.ph/file/65ac48f0cc4750144bd0d.mp4"
+            IALIVE_PIC = gvarstatus("IALIVE_PIC") or "https://telegra.ph/file/65ac48f0cc4750144bd0d.mp4"
             if IALIVE_PIC:
                 ZED = [x for x in IALIVE_PIC.split()]
                 PIC = list(ZED)
@@ -606,10 +606,10 @@ async def inline_handler(event):  # sourcery no-metrics
     else:
         buttons = [
             (
-                Button.url("قنـاة السـورس", "https://t.me/ZedThon"),
+                Button.url("قنـاة السـورس", "https://t.me/Repthon"),
                 Button.url(
                     "مطـور السـورس",
-                    "https://t.me/zzzzl1l",
+                    "https://t.me/ZQ_LO",
                 ),
             )
         ]
@@ -618,14 +618,14 @@ async def inline_handler(event):  # sourcery no-metrics
             url=ZEDLOGO, size=0, mime_type="image/jpeg", attributes=[]
         )
         text, msg_entities = await event.client._parse_message_text(
-            "𝗗𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗼𝘄𝗻 𝗭𝗧𝗵𝗼𝗻.", "md"
+            "𝗗𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗼𝘄𝗻 𝑹𝑬𝑷𝑻𝑯𝑶𝑵🜑.", "md"
         )
         result = types.InputBotInlineResult(
             id=str(uuid4()),
             type="photo",
-            title="𝗭𝗧𝗵𝗼𝗻 𓅛",
+            title="𝑹𝑬𝑷𝑻𝑯𝑶𝑵🜑 𓅛",
             description="روابـط التنصـيب",
-            url="https://t.me/ZedThon/105",
+            url="https://t.me/Repthon/24",
             thumb=photo,
             content=photo,
             send_message=types.InputBotInlineMessageMediaAuto(
