@@ -166,7 +166,7 @@ async def _(event):
     )
     stdout, stderr = await process.communicate()
     o = stdout.decode()
-    OUTPUT = f"**[𝗦𝗢𝗨𝗥𝗖𝗘 𝙕𝞝𝘿](tg://need_update_for_some_feature/) , تم حساب سرعة السيرفر:**\n{o}"
+    OUTPUT = f"**[𝗦𝗢𝗨𝗥𝗖𝗘 R𝙀𝙋𝙏𝙃𝙊𝙉𖠏](tg://need_update_for_some_feature/) , تم حساب سرعة السيرفر:**\n{o}"
     if len(OUTPUT) > Config.MAX_MESSAGE_SIZE_LIMIT:
         with io.BytesIO(str.encode(OUTPUT)) as out_file:
             out_file.name = "env.text"
