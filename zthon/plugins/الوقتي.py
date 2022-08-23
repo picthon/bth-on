@@ -28,7 +28,7 @@ from ..sql_helper.globals import addgvar, delgvar, gvarstatus
 from . import edit_delete, zedub, logging
 
 plugin_category = "الادوات"
-DEFAULTUSERBIO = Config.DEFAULT_BIO or "الحمد الله على كل شئ - @ZedThon"
+DEFAULTUSERBIO = Config.DEFAULT_BIO or "الحمد الله على كل شئ - @Repthon"
 DEFAULTUSER = Config.DEFAULT_NAME or Config.ALIVE_NAME
 LOGS = logging.getLogger(__name__)
 CHANGE_TIME = int(gvarstatus("CHANGE_TIME")) if gvarstatus("CHANGE_TIME") else 60
