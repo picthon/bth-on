@@ -31,8 +31,8 @@ LOGS = logging.getLogger(__name__)
 
 BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)\]\<buttonurl:(?:/{0,2})(.+?)(:same)?\>)")
 MEDIA_PATH_REGEX = re.compile(r"(:?\<\bmedia:(:?(?:.*?)+)\>)")
-ZEDLOGO = "https://telegra.ph/file/65ac48f0cc4750144bd0d.mp4"
-MALATH_PIC = "https://telegra.ph/file/65ac48f0cc4750144bd0d.mp4"
+ZEDLOGO = "https://telegra.ph/file/e45d01cc4a8b66cba94ee.jpg"
+MALATH_PIC = "https://telegra.ph/file/e45d01cc4a8b66cba94ee.jpg"
 tr = Config.COMMAND_HAND_LER
 
 
@@ -256,11 +256,11 @@ async def inline_handler(event):  # sourcery no-metrics
             buttons = [
                 (
                     Button.inline("Stats", data="stats"),
-                    Button.url("𝗭𝗧𝗵𝗼𝗻™ 𓅛", "https://t.me/ZedThon"),
+                    Button.url("R𝙀𝙋𝙏𝙃𝙊𝙉𖠏™ 𓅛", "https://t.me/Repthon"),
                 )
             ]
-            ALIVE_PIC = gvarstatus("ALIVE_PIC") or "https://telegra.ph/file/65ac48f0cc4750144bd0d.mp4"
-            IALIVE_PIC = gvarstatus("IALIVE_PIC") or "https://telegra.ph/file/65ac48f0cc4750144bd0d.mp4"
+            ALIVE_PIC = gvarstatus("ALIVE_PIC") or "https://telegra.ph/file/e45d01cc4a8b66cba94ee.jpg"
+            IALIVE_PIC = gvarstatus("IALIVE_PIC") or "https://telegra.ph/file/e45d01cc4a8b66cba94ee.jpg"
             if IALIVE_PIC:
                 ZED = [x for x in IALIVE_PIC.split()]
                 PIC = list(ZED)
