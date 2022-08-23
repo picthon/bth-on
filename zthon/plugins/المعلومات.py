@@ -77,7 +77,7 @@ async def _(event):
 async def _(event):
     cmd = "ls zthon/plugins"
     o = (await _zedutils.runcmd(cmd))[0]
-    OUTPUT = f"**⌔∮ [𝗦𝗢𝗨𝗥𝗖𝗘 𝙕𝞝𝘿](tg://need_update_for_some_feature/) الالاضافات:**\n{o}"
+    OUTPUT = f"**⌔∮ [𝗦𝗢𝗨𝗥𝗖𝗘 R𝙀𝙋𝙏𝙃𝙊𝙉𖠏](tg://need_update_for_some_feature/) الالاضافات:**\n{o}"
     await edit_or_reply(event, OUTPUT)
 
 
@@ -129,7 +129,7 @@ async def _(event):
     stdout, stderr = await process.communicate()
     o = stdout.decode()
     OUTPUT = (
-        f"**[𝗦𝗢𝗨𝗥𝗖𝗘 𝙕𝞝𝘿](tg://need_update_for_some_feature/) Environment Module:**\n\n\n{o}"
+        f"**[𝗦𝗢𝗨𝗥𝗖𝗘 R𝙀𝙋𝙏𝙃𝙊𝙉𖠏](tg://need_update_for_some_feature/) Environment Module:**\n\n\n{o}"
     )
     if len(OUTPUT) > Config.MAX_MESSAGE_SIZE_LIMIT:
         with io.BytesIO(str.encode(OUTPUT)) as out_file:
@@ -186,7 +186,7 @@ async def _(event):
 @zedub.zed_cmd(pattern="تاريخ التنصيب$")
 async def zeddd(event):
     uname = platform.uname()
-    zedt = "**- تاريخ تنصيبـك لـ بـوت زدثـــون - 𓆩𝙎𝙊𝙐𝙍𝘾𝞝 𝙕𝞝𝘿𓆪**\n\n"
+    zedt = "**- تاريخ تنصيبـك لـ بـوت ريبثون - 𓆩𝙎𝙊𝙐𝙍𝘾𝞝 𝑹𝑬𝑷𝑻𝑯𝑶𝑵🜑𓆪**\n\n"
     boot_time_timestamp = psutil.boot_time()
     zz = datetime.fromtimestamp(boot_time_timestamp)
     zedt += f"**هـو** ` {zz.year}/{zz.month}/{zz.day} `"
