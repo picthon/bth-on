@@ -10,7 +10,7 @@ plugin_category = "الترفيه"
 # بلاي 
 M = (
     "**𓆰**  𝙎𝙊𝙐𝙍𝘾𝙀 R𝙀𝙋𝙏𝙃𝙊𝙉𖠏   **العـاب الاونلايـن** 🎮𓆪 \n"
-    "◐━─━─━─━─𝙕𝞝𝘿─━─━─━─━◐\n\n"
+    "◐━─━─━─━─𝐑𝐄𝐏𝐓𝐇𝐎𝐍─━─━─━─━◐\n\n"
     "  ❶ **⪼**  [حرب الفضاء 🛸](https://t.me/gamee?game=ATARIAsteroids)   \n"
     "  ❷ **⪼**  [لعبة فلابي بيرد 🐥](https://t.me/awesomebot?game=FlappyBird)   \n"
     "  ❸ **⪼**  [القط المشاكس 🐱](https://t.me/gamee?game=CrazyCat)   \n"
