@@ -792,7 +792,7 @@ async def variable(event):
     viraq = "Asia/Baghdad"
     vmsr = "Africa/Cairo"
     heroku_var = app.config()
-    zed = await edit_or_reply(event, "**✾╎جـاري أعـداد المنطقـه الزمنيـه لـ زدثــون 🌐...**")
+    zed = await edit_or_reply(event, "**✾╎جـاري أعـداد المنطقـه الزمنيـه لـ ريبثون 🌐...**")
     # All Rights Reserved for "Zed-Thon" "زلـزال الهيبـه"
     if input_str == "العراق" or input_str == "عراق":
         variable = "TZ"
