@@ -227,7 +227,7 @@ async def zed_handler(event):
     await zedub.get_me()
     if query.startswith("سورس") and event.query.user_id == zedub.uid:
         Zelzal = f"**•◈• اصــدار الســورس ⤽ 7.7**  \n**•◈• المستخــدم ⤽**  {mention}  \n**•◈• وقــت التشغيــل ⤽  {TM}  **\n**•◈• البــوت المســاعـد ⤽  {TG_BOT} **\n**•◈• قنــاة الســورس ⤽  @Repthon **"
-        buttons = [[Button.url("قنـاة الســورس", "https://t.me/ZedThon"), Button.url("مطـور الســورس", "https://t.me/zzzzl1l")]]
+        buttons = [[Button.url("قنـاة الســورس", "https://t.me/Repthon"), Button.url("مطـور الســورس", "https://t.me/ZQ_LO")]]
         if ZEDPIC and ZEDPIC.endswith((".jpg", ".png", ".gif", ".mp4")):
             result = builder.photo(ZEDPIC, text=Zelzal, buttons=buttons, link_preview=True)
         elif ZEDPIC:
