@@ -10,8 +10,8 @@ from .sql_helper.globals import addgvar, delgvar, gvarstatus
 
 __version__ = "3.1.1"
 __license__ = "GNU Affero General Public License v3.0"
-__author__ = "ZThon <https://github.com/Zed-Thon/Zelzal>"
-__copyright__ = f"ZThon Copyright (C) 2020 - 2021  {__author__}"
+__author__ = "Repthon <https://github.com/rogerpq/Repthon(>"
+__copyright__ = f Rspthon Copyright (C) 2020 - 2021  {__author__}"
 
 zedub.version = __version__
 zedub.tgbot.version = __version__
