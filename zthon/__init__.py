@@ -32,8 +32,8 @@ def close_connection(*_):
 signal.signal(signal.SIGTERM, close_connection)
 
 
-if Config.UPSTREAM_REPO == "zel":
-    UPSTREAM_REPO_URL = "https://github.com/Zed-Thon/ZelZal"
+if Config.UPSTREAM_REPO == "Rep":
+    UPSTREAM_REPO_URL = "https://github.com/rogerpq/Repthon-"
 else:
     UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
 
