@@ -297,7 +297,7 @@ async def verifyLoggerGroup():
             )
     else:
         descript = "لا تقم بحذف هذه المجموعة أو التغيير إلى مجموعة عامه (وظيفتهـا تخزيـن كـل سجـلات وعمليـات البـوت.)"
-        photozed = await zedub.upload_file(file="zedthon/malath/Zpic.jpg")
+        photozed = await zedub.upload_file(file="zedthon/malath/IMG_20220821_230957_726.jpg")
         _, groupid = await create_supergroup(
             "كـروب السجـل ريبثون ", zedub, Config.TG_BOT_USERNAME, descript, photozed
         )
