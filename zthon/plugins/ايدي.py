@@ -26,7 +26,7 @@ plugin_category = "العروض"
 LOGS = logging.getLogger(__name__)
 ZED_TEXT = gvarstatus("CUSTOM_ALIVE_TEXT") or "╮•⎚• مـعلومات الـشخص من بوت ريبثون "
 ZEDM = gvarstatus("CUSTOM_ALIVE_EMOJI") or "✦"
-ZEDF = gvarstatus("CUSTOM_ALIVE_FONT") or "★•┉ ┉ ┉ ┉ ┉ ᶻᵗʰᵒᶰ ┉  ┉ ┉ ┉ ┉•★"
+ZEDF = gvarstatus("CUSTOM_ALIVE_FONT") or "★•┉ ┉ ┉ ┉ ┉ 𝐑𝐄𝐏𝐓𝐇𝐎𝐍 ┉  ┉ ┉ ┉ ┉•★"
 
 
 
