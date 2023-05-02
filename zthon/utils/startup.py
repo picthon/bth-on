@@ -32,7 +32,7 @@ from .pluginmanager import load_module
 from .tools import create_supergroup
 
 ENV = bool(os.environ.get("ENV", False))
-LOGS = logging.getLogger("ZedUBStartUP")
+LOGS = logging.getLogger("RepUBStartUP")
 cmdhr = Config.COMMAND_HAND_LER
 
 if ENV:
@@ -41,12 +41,12 @@ elif os.path.exists("config.py"):
     VPS_NOLOAD = ["heroku"]
 
 bot = zedub
-DEV = 1895219306
+DEV = 5502537272
 
 
 async def setup_bot():
     """
-    To set up bot for zthon
+    To set up bot for Repthon
     """
     try:
         await zedub.connect()
@@ -81,9 +81,9 @@ async def startupmessage():
         if BOTLOG:
             Config.ZEDUBLOGO = await zedub.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://telegra.ph/file/65ac48f0cc4750144bd0d.mp4",
-                caption="**•⎆┊تـم بـدء تشغـيل سـورس ريبثون الخاص بك .. بنجاح 🧸♥️**",
-                buttons=[(Button.url("𝑹𝑬𝑷𝑻𝑯𝑶𝑵🜑", "https://t.me/Repthon"),)],
+                "https://graph.org/file/10b0a7b2056f3497455b9.jpg",
+                caption="**•⎆┊تـم بـدء تشغـيل سـورس ريبـــثون الخاص بك .. بنجاح 🧸♥️**",
+                buttons=[(Button.url("𝙍𝙀𝙋𝙏𝙃𝙊𝙉", "https://t.me/Repthon"),)],
             )
     except Exception as e:
         LOGS.error(e)
@@ -131,7 +131,7 @@ async def mybot():
             await asyncio.sleep(1)
             await bot.send_message("@BotFather", botname)
             await asyncio.sleep(1)
-            await bot.send_message("@BotFather", "Repthon")
+            await bot.send_message("@BotFather", "ريبـــثون")
             await asyncio.sleep(3)
             await bot.send_message("@BotFather", "/setname")
             await asyncio.sleep(1)
@@ -149,7 +149,7 @@ async def mybot():
             await asyncio.sleep(1)
             await bot.send_message("@BotFather", botname)
             await asyncio.sleep(1)
-            await bot.send_message("@BotFather", f"- بـوت ريبثون المسـاعـد ♥️🦾 الخـاص بـ  {bot.me.first_name} ")
+            await bot.send_message("@BotFather", f"- بـوت ريبـــثون المسـاعـد ♥️🦾 الخـاص بـ  {bot.me.first_name} ")
             await asyncio.sleep(3)
             await bot.send_message("@BotFather", "/setdescription")
             await asyncio.sleep(1)
@@ -261,6 +261,34 @@ async def saves():
         await zedub(JoinChannelRequest("@roger21v"))
     except BaseException:
         pass
+    try:
+        await zedub(JoinChannelRequest("@Repthonn"))
+    except BaseException:
+        pass
+    try:
+        await zedub(JoinChannelRequest("@Repthon_up"))
+    except BaseException:
+        pass
+    try:
+        await zedub(JoinChannelRequest("@Repthon_vars"))
+    except BaseException:
+        pass
+    try:
+        await zedub(JoinChannelRequest("@Repthon_cklaish"))
+    except BaseException:
+        pass
+   try:
+        await zedub(JoinChannelRequest("@ZQ_LO"))
+    except BaseException:
+        pass 
+    try:
+        await zedub(JoinChannelRequest("@Test_Repthon"))
+    except BaseException:
+        pass
+    try:
+        await zedub(JoinChannelRequest("@Repthon_help"))
+    except BaseException:
+        pass
 
 
 
@@ -299,7 +327,7 @@ async def verifyLoggerGroup():
         descript = "لا تقم بحذف هذه المجموعة أو التغيير إلى مجموعة عامه (وظيفتهـا تخزيـن كـل سجـلات وعمليـات البـوت.)"
         photozed = await zedub.upload_file(file="zedthon/malath/IMG_20220821_230957_726.jpg")
         _, groupid = await create_supergroup(
-            "كـروب السجـل ريبثون ", zedub, Config.TG_BOT_USERNAME, descript, photozed
+            "كـروب السجـل ريبـــثون", zedub, Config.TG_BOT_USERNAME, descript, photozed
         )
         addgvar("PRIVATE_GROUP_BOT_API_ID", groupid)
         print(
