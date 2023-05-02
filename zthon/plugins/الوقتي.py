@@ -1,13 +1,13 @@
-# @Zed-Thon - ZelZal
-# Copyright (C) 2022 ZedThon . All Rights Reserved
-#< https://t.me/ZedThon >
-# This file is a part of < https://github.com/Zed-Thon/ZelZal/ >
+# @Repthon - Baqir
+# Copyright (C) 2022 Repthon . All Rights Reserved
+#< https://t.me/Repthon >
+# This file is a part of < https://github.com/rogerpq/Repthon-_-/ >
 # PLease read the GNU Affero General Public License in
-# <https://www.github.com/Zed-Thon/ZelZal/blob/master/LICENSE/>.
+# <https://www.github.com/rogerpq/Repthon-_-/blob/master/LICENSE/>.
 #كـود الصورة الوقتيه كتـابتي وتعديلـي من زمان ومتعوب عليها 
 #+ كـود زخـرفة الصورة الوقتيه
 #+ دددي لا ابلـع حســابك بـانـد بطـعـم الليمــون 🍋😹🤘
-#زلــزال الهيبــه يـ ولــد - حقــوق لـ التــاريـخ ®
+# روجر يـ ولــد - حقــوق لـ التــاريـخ ®
 #هههههههههههههههههههههههههههههههههههههههههههههههههه
 
 import asyncio
@@ -92,7 +92,7 @@ async def autoname_loop():
             if normal in normzltext:
               namefont = namerzfont[normzltext.index(normal)]
               HM = HM.replace(normal, namefont)
-        name = f"{ZEDT}|{HM}"
+        name = f"{ZEDT}{HM} | "
         LOGS.info(name)
         try:
             await zedub(functions.account.UpdateProfileRequest(last_name=name))
