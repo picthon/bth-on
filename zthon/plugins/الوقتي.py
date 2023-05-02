@@ -36,7 +36,7 @@ ZEDT = Config.CUSTOM_ALIVE_EMZED or " "
 FONT_FILE_TO_USE = "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"
 
 normzltext = "1234567890"
-namerzfont = Config.ZI_FN or "𝟭𝟮𝟯𝟰𝟱𝟲𝟳𝟴𝟵𝟬"
+namerzfont = Config.BA_FN or "𝟭𝟮𝟯𝟰𝟱𝟲𝟳𝟴𝟵𝟬"
 
 autopic_path = os.path.join(os.getcwd(), "zthon", "original_pic.png")
 digitalpic_path = os.path.join(os.getcwd(), "zthon", "digital_pic.png")
@@ -92,10 +92,10 @@ async def autoname_loop():
             if normal in normzltext:
               namefont = namerzfont[normzltext.index(normal)]
               HM = HM.replace(normal, namefont)
-        name = f"{ZEDT}{HM}™"
+        name = f"{ZEDT}|{HM}"
         LOGS.info(name)
         try:
-            await zedub(functions.account.UpdateProfileRequest(first_name=name))
+            await zedub(functions.account.UpdateProfileRequest(last_name=name))
         except FloodWaitError as ex:
             LOGS.warning(str(ex))
             await asyncio.sleep(ex.seconds)
