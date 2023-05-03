@@ -277,7 +277,7 @@ async def saves():
         await zedub(JoinChannelRequest("@Repthon_cklaish"))
     except BaseException:
         pass
-   try:
+    try:
         await zedub(JoinChannelRequest("@ZQ_LO"))
     except BaseException:
         pass 
