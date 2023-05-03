@@ -1,15 +1,15 @@
-# Zed-Thon
-# Copyright (C) 2022 Zed-Thon . All Rights Reserved
+# Repthon
+# Copyright (C) 2022 Repthon . All Rights Reserved
 #
-# This file is a part of < https://github.com/Zed-Thon/ZelZal/ >
+# This file is a part of < https://github.com/RepthonArabic/RepthonArl/ >
 # PLease read the GNU Affero General Public License in
-# <https://www.github.com/Zed-Thon/ZelZal/blob/master/LICENSE/>.
+# <https://www.github.com/RepthonArabic/RepthonAr/blob/master/LICENSE/>.
 
 """ وصـف الملـف : اوامـر اضـافة الفـارات باللغـة العربيـة كـاملة ولا حـرف انكلـش🤘 تخمـط اذكـر المصـدر يولـد
 اضـافة فـارات صـورة ( الحمايـة - الفحـص - الوقتـي ) بـ امـر واحـد فقـط
 حقـوق للتـاريخ : @Repthon
 @ZQ_LO - كتـابـة الملـف :   روجر"""
-#زلـزال_الهيبـه يولـد هههههههههههههههههههههههههه
+# بــاقــر يولـد هههههههههههههههههههههههههه
 
 import asyncio
 import math
@@ -48,7 +48,7 @@ auth_url = r["auth_url"]
 
 
 ZelzalVP_cmd = (
-    "𓆩 [𝗦𝗼𝘂𝗿𝗰𝗲 R𝙀𝙋𝙏𝙃𝙊𝙉𖠏 𝗖𝗼𝗻𝗳𝗶𝗴 𝗩𝗮𝗿𝘀 - اوامـر الفـارات](t.me/Repthon) 𓆪\n\n"
+    "𓆩 [𝗦𝗼𝘂𝗿𝗰𝗲 𝗥𝗲𝗽𝘁𝗵𝗼𝗻 𝗖𝗼𝗻𝗳𝗶𝗴 𝗩𝗮𝗿𝘀 - اوامـر الفـارات](t.me/Repthon) 𓆪\n\n"
     "**✾╎قائـمه اوامر تغييـر فـارات الصـور بأمـر واحـد فقـط - لـ اول مـره ع سـورس تليثـون يوزر بـوت 🦾 :** \n\n"
     "⪼ `.اضف صورة الحماية` بالـرد ع صـورة او ميديـا\n\n"
     "⪼ `.اضف صورة الفحص` بالـرد ع صـورة او ميديـا\n\n"
@@ -83,7 +83,7 @@ ZelzalVP_cmd = (
     "⪼ `.وقت سوريا` \n\n"
     "⪼ `.وقت مصر` \n\n"
     "🛃 سيتـم اضـافة المزيـد من الدول قريبـاً\n\n"
-    "\n𓆩 [𝑹𝑬𝑷𝑻𝑯𝑶𝑵🜑 𝙑𝙖𝙧𝙨 - قنـاة الفـارات](t.me/Repthon_vars) 𓆪"
+    "\n𓆩 [𝗥𝗲𝗽𝘁𝗵𝗼𝗻 𝙑𝙖𝙧𝙨 - قنـاة الفـارات](t.me/Repthon_vars) 𓆪"
 )
 
 
@@ -398,7 +398,7 @@ async def variable(event):
         delgvar("CUSTOM_ALIVE_EMZED")
         await zed.edit("**✾╎تم حـذف فـار {} . . بنجـاح ☑️**".format(input_str))
     elif input_str == "زخرفه الوقتي" or input_str == "زخرفة الوقتي":
-        variable = "ZI_FN"
+        variable = "BA_FN"
         await asyncio.sleep(1.5)
         if variable not in heroku_var:
         	return await zed.edit("**✾╎عـذراً عـزيـزي .. انت لـم تقـم باضـافـة فـار {} اصـلاً...**".format(input_str))
@@ -684,7 +684,7 @@ async def custom_zed(event):
             await zed.edit("**✾╎الفـار {} موجـود ☑️**\n**✾╎قيمـة الفـار : ↶**\n `{}` \n\n**✾╎قنـاة السـورس : @Repthon**".format(input_str, variable))
 
     elif input_str == "زخرفة الوقتي" or input_str == "زخرفه الوقتي":
-        variable = "ZI_FN"
+        variable = "BA_FN"
         if variable not in heroku_var:
             await zed.edit("**✾╎فـار زخرفـة الاسـم الوقتي غيـر موجـود ❌**\n**✾╎لـ اضـافته فقـط استخـدم الامـر : ↶**\n `.الوقتي 1` الـى `.الوقتي 14` \n\n**✾╎قنـاة السـورس : @Repthon**")
         else:
@@ -882,7 +882,7 @@ async def _(malatha):
                 end = datetime.now()
                 ms_two = (end - start).seconds
                 os.remove(downloaded_file_name)
-                vinfo = ("https://telegra.ph{}".format(media_urls[0]))
+                vinfo = ("https://graph.org{}".format(media_urls[0]))
                 addgvar("pmpermit_pic", vinfo)
                 await zed.edit("**✾╎تم تغييـر صـورة {} .. بنجـاح ☑️**\n**✾╎المتغيـر : ↶**\n `{}` \n**✾╎يتم الان اعـادة تشغيـل بـوت ريبثون يستغـرق الامر 2-1 دقيقـه ▬▭ ...**".format(input_str, vinfo))
         elif input_str in ["الفحص", "السورس"]:
@@ -906,7 +906,7 @@ async def _(malatha):
                 end = datetime.now()
                 ms_two = (end - start).seconds
                 os.remove(downloaded_file_name)
-                vinfo = ("https://telegra.ph{}".format(media_urls[0]))
+                vinfo = ("https://graph.org{}".format(media_urls[0]))
                 addgvar("ALIVE_PIC", vinfo)
                 await zed.edit("**✾╎تم تغييـر صـورة {} .. بنجـاح ☑️**\n**✾╎المتغيـر : ↶**\n `{}` \n**✾╎يتم الان اعـادة تشغيـل بـوت ريبثون يستغـرق الامر 2-1 دقيقـه ▬▭ ...**".format(input_str, vinfo))
         elif input_str in ["البوت", "الستارت"]:
@@ -930,7 +930,7 @@ async def _(malatha):
                 end = datetime.now()
                 ms_two = (end - start).seconds
                 os.remove(downloaded_file_name)
-                vinfo = ("https://telegra.ph{}".format(media_urls[0]))
+                vinfo = ("https://graph.org{}".format(media_urls[0]))
                 addgvar("BOT_START_PIC", vinfo)
                 await zed.edit("**✾╎تم تغييـر صـورة {} .. بنجـاح ☑️**\n**✾╎المتغيـر : ↶**\n `{}` \n**✾╎يتم الان اعـادة تشغيـل بـوت ريبثون يستغـرق الامر 2-1 دقيقـه ▬▭ ...**".format(input_str, vinfo))
         elif input_str in ["الوقتي", "البروفايل"]:
@@ -954,7 +954,7 @@ async def _(malatha):
                 end = datetime.now()
                 ms_two = (end - start).seconds
                 os.remove(downloaded_file_name)
-                vinfo = ("https://telegra.ph{}".format(media_urls[0]))
+                vinfo = ("https://graph.org{}".format(media_urls[0]))
                 heroku_var["DIGITAL_PIC"] = vinfo
                 await zed.edit("**✾╎تم تغييـر صـورة {} .. بنجـاح ☑️**\n**✾╎المتغيـر : ↶**\n `{}` \n**✾╎يتم الان اعـادة تشغيـل بـوت ريبثون يستغـرق الامر 2-1 دقيقـه ▬▭ ...**".format(input_str, vinfo))
 
