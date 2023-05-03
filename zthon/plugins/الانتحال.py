@@ -1,4 +1,4 @@
-#ZThon - @zzzzl1l
+#Repthon - @Repthon
 import html
 
 from telethon.tl import functions
