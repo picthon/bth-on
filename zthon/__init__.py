@@ -1,4 +1,3 @@
-
 import signal
 import sys
 import time
@@ -16,7 +15,7 @@ __copyright__ = f"Repthon Copyright (C) 2020 - 2021  {__author__}"
 
 zedub.version = __version__
 zedub.tgbot.version = __version__
-LOGS = logging.getLogger("zedub")
+LOGS = logging.getLogger("𝐑𝐞𝐩𝐭𝐡𝐨𝐧")
 bot = zedub
 
 StartTime = time.time()
@@ -32,8 +31,8 @@ def close_connection(*_):
 signal.signal(signal.SIGTERM, close_connection)
 
 
-if Config.UPSTREAM_REPO == "Rep":
-    UPSTREAM_REPO_URL = "https://github.com/rogerpq/Repthon-_-"
+if Config.UPSTREAM_REPO == "Repthon":
+    UPSTREAM_REPO_URL = "https://github.com/RepthonArabic/RepthonAr"
 else:
     UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
 
