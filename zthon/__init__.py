@@ -19,7 +19,7 @@ LOGS = logging.getLogger("𝐑𝐞𝐩𝐭𝐡𝐨𝐧")
 bot = zedub
 
 StartTime = time.time()
-zedversion = "3.1.3"
+repversion = "3.1.3"
 
 
 def close_connection(*_):
