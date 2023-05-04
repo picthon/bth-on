@@ -13,7 +13,7 @@ from telethon.errors.rpcerrorlist import (
 )
 from telethon.events import CallbackQuery
 
-from zthon import StartTime, zedub, zedversion
+from zthon import StartTime, zedub, repversion
 
 from ..Config import Config
 from ..core.managers import edit_or_reply
@@ -45,7 +45,7 @@ async def amireallyalive(event):
         mention=mention,
         uptime=uptime,
         telever=version.__version__,
-        zdver=zedversion,
+        repver=repversion,
         pyver=python_version(),
         dbhealth=check_sgnirts,
         ping=ms,
@@ -74,7 +74,7 @@ zed_temp = """{ALIVE_TEXT}
 
 **{Z_EMOJI} قاعدۿ البيانات :** تعمل بنـجاح
 **{Z_EMOJI} إصـدار التـيليثون :** `{telever}`
-**{Z_EMOJI} إصـدار ريبـــثون :** `{zdver}`
+**{Z_EMOJI} إصـدار ريبـــثون :** `{repver}`
 **{Z_EMOJI} إصـدار البـايثون :** `{pyver}`
 **{Z_EMOJI} الوقـت :** `{uptime}`
 **{Z_EMOJI} المسـتخدم:** {mention}
@@ -97,7 +97,7 @@ async def amireallyialive(event):
     Z_EMOJI = gvarstatus("ALIVE_EMOJI") or "✥┊"
     zed_caption = "** بـوت ريبـــثون 𝐑𝐞𝐩𝐭𝐡𝐨𝐧 يعمـل .. بنجـاح ☑️ 𓆩 **\n"
     zed_caption += f"**{Z_EMOJI} إصـدار التـيليثون :** `{version.__version__}\n`"
-    zed_caption += f"**{Z_EMOJI} إصـدار ريبـــثون :** `{zedversion}`\n"
+    zed_caption += f"**{Z_EMOJI} إصـدار ريبـــثون :** `{repversion}`\n"
     zed_caption += f"**{Z_EMOJI} إصـدار البـايثون :** `{python_version()}\n`"
     zed_caption += f"**{Z_EMOJI} المسـتخدم :** {mention}\n"
     results = await event.client.inline_query(Config.TG_BOT_USERNAME, zed_caption)
