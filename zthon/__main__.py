@@ -14,7 +14,7 @@ from .utils import (
     verifyLoggerGroup,
 )
 
-LOGS = logging.getLogger("Repthon")
+LOGS = logging.getLogger("𝐑𝐞𝐩𝐭𝐡𝐨𝐧")
 
 print(zthon.__copyright__)
 print(f"المرخصة بموجب شروط  {zthon.__license__}")
