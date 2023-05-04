@@ -92,7 +92,7 @@ async def autoname_loop():
             if normal in normzltext:
               namefont = namerzfont[normzltext.index(normal)]
               HM = HM.replace(normal, namefont)
-        name = f"{ZEDT}{HM} | "
+        name = f"{ZEDT} | {HM}"
         LOGS.info(name)
         try:
             await zedub(functions.account.UpdateProfileRequest(last_name=name))
