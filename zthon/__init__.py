@@ -1,4 +1,3 @@
-
 import signal
 import sys
 import time
@@ -11,12 +10,12 @@ from .sql_helper.globals import addgvar, delgvar, gvarstatus
 
 __version__ = "3.1.1"
 __license__ = "GNU Affero General Public License v3.0"
-__author__ = "Repthon <https://github.com/rogerpq/Repthon-_->"
+__author__ = "Repthon <https://github.com/RepthonArabic/RepthonAr>"
 __copyright__ = f"Repthon Copyright (C) 2020 - 2021  {__author__}"
 
 zedub.version = __version__
 zedub.tgbot.version = __version__
-LOGS = logging.getLogger("zedub")
+LOGS = logging.getLogger("𝐑𝐞𝐩𝐭𝐡𝐨𝐧")
 bot = zedub
 
 StartTime = time.time()
