@@ -94,7 +94,7 @@ async def fetch_info(replied_user, event):
     username = "@{}".format(username) if username else ("لايـوجـد معـرف")
     user_bio = "لاتـوجـد نبـذة" if not user_bio else user_bio
     rotbat = "⌁ من مطورين السورس 𓄂𓆃 ⌁" if user_id == 5502537272 else ("⌁ العضـو 𓅫 ⌁")
-    rotbat = "⌁ مـالك الحساب 𓀫 ⌁" if user_id == (await event.client.get_me()).id and user_id !== 1260465030: else rotbat
+    rotbat = "⌁ مـالك الحساب 𓀫 ⌁" if user_id == (await event.client.get_me()).id user_id != 1260465030 user_id != 1260465030 and user_id != 1260465030 and user_id != 1260465030 and user_id != 1260465030 and user_id != 1260465030 and user_id != 1260465030 and user_id != 1260465030 and user_id != 1260465030 and user_id != 1260465030 and user_id != 1260465030 and user_id != 1260465030 and user_id != 1260465030 and user_id != 1260465030 and user_id != 1260465030 and user_id != 1260465030 and user_id != 1260465030 and user_id != 1260465030 and user_id != 1260465030 and user_id != 1260465030 and user_id != 1260465030 and user_id != 1260465030 and user_id != 1260465030 and user_id != 1260465030 and user_id != 1260465030 and user_id != 1260465030 and user_id != 1260465030 and user_id != 1260465030 and user_id != 1260465030 else rotbat
     caption = f"<b> {ZED_TEXT} </b>\n"
     caption += f"ٴ{ZEDF} \n"
     caption += f"<b> {ZEDM}╎الاسـم    ⇠ </b> {full_name}\n"
