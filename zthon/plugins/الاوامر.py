@@ -62,8 +62,8 @@ async def zed_handler(event):
     builder = event.builder
     result = None
     query = event.text
-    await zedub.get_me()
-    if query.startswith("الاوامر") and event.query.user_id == zedub.uid:
+    await repub.get_me()
+    if query.startswith("الاوامر") and event.query.user_id == repub.uid:
         buttons = [[Button.inline("•❶•", data="ahmed1"), Button.inline("•❷•", data="ahmed2"), Button.inline("•❸•", data="ahmed3"), Button.inline("•❹•", data="ahmed4"), Button.inline("•❺•", data="ahmed5"),],[Button.inline("•❻•", data="ahmed6"), Button.inline("•❼•", data="ahmed7"), Button.inline("•❽•", data="ahmed8"), Button.inline("•❾•", data="ahmed9"), Button.inline("•❿•", data="ahmad10"),]]
         if ZEDPIC and ZEDPIC.endswith((".jpg", ".png")):
             result = builder.photo(ZEDPIC,text=Malath, buttons=buttons, link_preview=True)
@@ -73,7 +73,7 @@ async def zed_handler(event):
             result = builder.article(title="repub",text=Malath,buttons=buttons,link_preview=True)
         await event.answer([result] if result else None)
 @zedub.zed_cmd(pattern="الاوامر(?: |$)(.*)")
-async def repozedub(event):
+async def reporepub(event):
     if event.fwd_from:
         return
     TG_BOT = Config.TG_BOT_USERNAME
