@@ -1,4 +1,4 @@
-# telegraph utils for ZThon
+# telegraph utils for Repthon
 import os
 import random
 import string
@@ -87,7 +87,7 @@ async def _(event):
             ms = (end - start).seconds
             os.remove(downloaded_file_name)
             await zedevent.edit(
-                f"**⌔∮الــرابـط : **[اضغــط هنـــا](https://telegra.ph{media_urls[0]})\
+                f"**⌔∮الــرابـط : **[اضغــط هنـــا](https://graph.org{media_urls[0]})\
                     \n**⌔∮الـوقـت : **`{ms} seconds.`",
                 link_preview=True,
             )
@@ -122,7 +122,7 @@ async def _(event):
             response = telegraph.create_page(title_of_page, html_content=page_content)
         end = datetime.now()
         ms = (end - start).seconds
-        zed = f"https://telegra.ph/{response['path']}"
+        zed = f"https://graph.org/{response['path']}"
         await zedevent.edit(
             f"**link : ** [telegraph]({zed})\
                  \n**Time Taken : **`{ms} seconds.`",
