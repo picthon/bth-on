@@ -270,7 +270,7 @@ async def upstream(event):
             f"I guess you are on selfhost. For self host you need to use `{cmdhd}update now`",
         )
     event = await edit_or_reply(event, f"𓆩 [𝙎𝙊𝙐𝙍𝘾𝞝 R𝙀𝙋𝙏𝙃𝙊𝙉𖠏 - تحـديثـات السـورس](t.me/Repthon) 𓆪\n**•─────────────────•**\n\n**⪼ يتم تنصيب التحديث  انتظر 🌐 𓆰،**")
-    off_repo = "https://github.com/Zed-Thon/nekopack"
+    off_repo = "https://github.com/RepthonArabic/E_7_V"
     os.chdir("/app")
     try:
         txt = (
