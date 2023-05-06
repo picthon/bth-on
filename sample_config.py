@@ -62,7 +62,7 @@ class Config(object):
         or 0
     )
 
-    #فارات زدثــون
+    #فـارات ريبـــثون
     CUSTOM_ALIVE_TEXT = os.environ.get("CUSTOM_ALIVE_TEXT", None)
     CUSTOM_ALIVE_EMOJI = os.environ.get("CUSTOM_ALIVE_EMOJI", None)
     CUSTOM_ALIVE_EMZED = os.environ.get("CUSTOM_ALIVE_EMZED", None)
@@ -78,6 +78,10 @@ class Config(object):
     DEFAULT_NAME = os.environ.get("DEFAULT_NAME", None)
     BA_FN = os.environ.get("BA_FN", "𝟭𝟮𝟯𝟰𝟱𝟲𝟳𝟴𝟵𝟬")
     CUSTOM_PMPERMIT_TEXT = os.environ.get("CUSTOM_PMPERMIT_TEXT", None)
+    VCMODE = os.environ.get("VCMODE", False)
+    VCMODE = bool(VCMODE and (VCMODE.lower() != "false"))
+    VC_SESSION = os.environ.get("VC_SESSION", None)
+    # فــارات الــمــيــوزكـ
 
     # Custom vars for zthon
     # set this will channel id of your custom plugins
