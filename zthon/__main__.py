@@ -62,8 +62,24 @@ async def startup_process():
         await add_bot_to_logger_group(PM_LOGGER_GROUP_ID)
     await startupmessage()
     return
+    
+async def externalrepo():
+    if Config.VCMODE:
+        await install_externalrepo("https://github.com/RepthonArabic/RepVc", "jepvc", "jepthonvc")
 
+zedub.loop.run_until_complete(externalrepo())
+zedub.loop.run_until_complete(startup_process())
 
+if len(sys.argv) not in (1, 3, 4):
+    zedub.disconnect()
+elif not Catcheck.sucess:
+    if HEROKU_APP is not None:
+        HEROKU_APP.restart()
+else:
+    try:
+        zedub.run_until_disconnected()
+    except ConnectionError:
+        pass
 
 zedub.loop.run_until_complete(startup_process())
 if len(sys.argv) not in (1, 3, 4):
