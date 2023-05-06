@@ -186,7 +186,7 @@ async def who(event):
         await cat.edit(caption, parse_mode="html")
 #كـتابة  @E_7_V
 #تعديل وترتيب  @E_7_V
-@zdub.zed_cmd(
+@zedub.zed_cmd(
     pattern="رابط الحساب(?:\s|$)([\s\S]*)",
     command=("رابط الحساب", plugin_category),
     info={
