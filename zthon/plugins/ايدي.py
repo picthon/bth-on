@@ -15,7 +15,7 @@ from ..core.managers import edit_or_reply
 from ..helpers import get_user_from_event, reply_id
 from . import spamwatch
 
-JEP_EM = Config.ID_EM or " •❃ "
+JEP_EM = ("CUSTOM_ALIVE_EMOJI") or " •❃ "
 ID_EDIT = gvarstatus("ID_ET") or "ايدي"
 
 plugin_category = "utils"
