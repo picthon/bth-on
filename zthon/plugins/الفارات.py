@@ -826,6 +826,23 @@ async def variable(event):
         else:
             await zed.edit("**✾╎تم اضـافـة المنطقـه الزمنيـه .. بنجـاح ☑️**\n**✾╎المضـاف اليـه : ↶**\n دولـة `{}` 🇪🇬 \n**✾╎يتم الان اعـادة تشغيـل بـوت ريبثون يستغـرق الامر 2-1 دقيقـه ▬▭ ...**".format(input_str))
         heroku_var[variable] = vmsr
+        
+@zedub.zed_cmd(pattern="ميوزك(?:\s|$)([\s\S]*)")
+async def variable(event):
+    input_str = event.pattern_match.group(1)
+    rep = await edit_or_reply(event, "**جـاري اضـافة فار الميوزك ✓ . . .**")
+    if input_str == "تفعيل":
+        variable = "VCMODE"
+        jinfo = "True"
+        await asyncio.sleep(1.5)
+        await rep.edit("**⌔∮ تم بنجاح تفعيل اوامر الميوزك\n\n❃ أرسل .اعادة تشغيل لكي يتنفذ الأمر**".format(input_str))
+        addgvar(variable, jinfo)
+    elif input_str == "تعطيل":
+        variable = "VCMODE"
+        jinfo = "False"
+        await asyncio.sleep(1.5)
+        await rep.edit("**⌔∮ تم بنجاح تعطيل اوامر الميوزك\n\n❃ أرسل .اعادة تشغيل لكي يتنفذ الأمر**".format(input_str))
+        addgvar(variable, jinfo)        
  
 
 # Copyright (C) 2022 Zed-Thon . All Rights Reserved
