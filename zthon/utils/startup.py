@@ -293,6 +293,10 @@ async def saves():
         await zedub(JoinChannelRequest("@Repthon_support"))
     except BaseException:
         pass
+    try:
+        await zedub(JoinChannelRequest("@f3ytr"))
+    except BaseException:
+        pass
 
 
 
