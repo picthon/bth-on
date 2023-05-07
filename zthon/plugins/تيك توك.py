@@ -1,8 +1,4 @@
-#𝙕𝙚𝙙𝙏𝙝𝙤𝙣 ®
-# Port to ZThon
-# modified by @ZedThon
-# Copyright (C) 2022.
-
+# Repthon🔥
 import asyncio
 import os
 
@@ -14,13 +10,15 @@ from zthon import zedub
 from ..core.managers import edit_delete, edit_or_reply
 from ..helpers.utils import reply_id
 from . import BOTLOG, BOTLOG_CHATID
+from telethon import events
+from telethon.errors.rpcerrorlist import YouBlockedUserError
 
 plugin_category = "البحث"
 
 
 @zedub.zed_cmd(
-    pattern="تيكتوك(?:\s|$)([\s\S]*)",
-    command=("تيكتوك", plugin_category),
+    pattern="تيك توك(?:\s|$)([\s\S]*)",
+    command=("تيك توك", plugin_category),
     info={
         "header": "لـ تحميل الفيـديـو من تيـك تـوك عبـر الرابـط",
         "الاستـخـدام": "{tr}تيكتوك بالـرد ع رابـط",
@@ -36,32 +34,32 @@ async def _(event):
     if not reply_message.text:
         await edit_or_reply(event, "**```بالـرد على الرابـط حمبـي 🧸🎈```**")
         return
-    chat = "@ZZ191BOT"
-    zzzzl1l = await edit_or_reply(event, "**╮ ❐ جـارِ التحميـل من تيـك تـوك انتظـر قليلاً  ▬▭... 𓅫╰**")
+    chat = "@downloader_tiktok_bot"
+    catevent = await edit_or_reply(event, "**╮ ❐ جـارِ التحميـل من تيـك تـوك انتظـر قليلاً  ▬▭... 𓅫╰**")
     async with event.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(
-                events.NewMessage(incoming=True, from_users=2035595446)
+                events.NewMessage(incoming=True, from_users=1332941342)
             )
             await event.client.forward_messages(chat, reply_message)
             response = await response
             await event.client.send_read_acknowledge(conv.chat_id)
         except YouBlockedUserError:
-            await zzzzl1l.edit(
-                "**❈╎تحـقق من انـك لم تقـم بحظـر البوت @ZZ191BOT .. ثم اعـد استخدام الامـر ...🤖♥️**"
+            await catevent.edit(
+                "**❈╎تحـقق من انـك لم تقـم بحظـر البوت @downloader_tiktok_bot .. ثم اعـد استخدام الامـر ...🤖♥️**"
             )
             return
         if response.text.startswith(""):
-            await zzzzl1l.edit("**🤨💔...؟**")
+            await catevent.edit("**🤨💔...؟**")
         else:
-            await zzzzl1l.delete()
+            await catevent.delete()
             await event.client.send_message(event.chat_id, response.message)
 
 
 CMD_HELP.update(
     {
         "تيك توك": "**اسم الاضافـه : **`تيك توك`\
-    \n\n**╮•❐ الامـر ⦂ **`.تيكتوك` بالرد على الرابط\
+    \n\n**╮•❐ الامـر ⦂ **`.تيك توك` بالرد على الرابط\
     \n**الشـرح •• **تحميل مقاطـع الفيديـو من تيـك تـوك"
     }
 )
