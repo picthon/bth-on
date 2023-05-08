@@ -322,9 +322,9 @@ async def stsfanan(zed):
 
 
 @zedub.zed_cmd(pattern="ثيمات")
-async def zed(ROGER):
-    await edit_or_reply(ROGER, ZL)
+async def zed(zelzal):
+    await edit_or_reply(zelzal, ZL)
 
 @zedub.zed_cmd(pattern="الثيمات")
-async def zed(ROGER):
-    await edit_or_reply(ROGER,)
+async def zed(zelzal):
+    await edit_or_reply(zelzal,)
