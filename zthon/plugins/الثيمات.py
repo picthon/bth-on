@@ -327,4 +327,4 @@ async def zed(zelzal):
 
 @zedub.zed_cmd(pattern="الثيمات")
 async def zed(zelzal):
-    await edit_or_reply(zelzal,)
+    await edit_or_reply(zelzal, X)
