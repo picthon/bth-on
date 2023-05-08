@@ -24,12 +24,16 @@ ZelzalCoins_cmd = (
     "**⪼ لـ تجميـع النقـاط مـن بـوت الجنــرال ( @MARKTEBOT ) .. تلقـائيـاً ✓**\n\n"
     "`.المليون`\n"
     "**⪼ لـ تجميـع النقـاط مـن بـوت المليــون ( @qweqwe1919bot ) .. تلقـائيـاً ✓**\n\n\n"
+    "`.العرب`\n"
+    "**⪼ لـ تجميـع النقـاط مـن بـوت الــعــرب ( @xnsex21bot ) .. تلقـائيـاً ✓
     "`.المليار ايقاف`\n"
     "**⪼ لـ ايقـاف عمليـة تجميـع النقـاط من بوت المليـار ..**\n\n"
     "`.الجوكر ايقاف`\n"
     "**⪼ لـ ايقـاف عمليـة تجميـع النقـاط من بوت الجوكـر ..**\n\n"
     "`.الجنرال ايقاف`\n"
     "**⪼ لـ ايقـاف عمليـة تجميـع النقـاط من بوت الجنـرال ..**\n\n"
+    "`.العرب ايقاف`\n"
+    "**⪼ لـ ايقـاف عمليـة تجميـع النقـاط من بوت الــعــرب ..**\n\n"
     "`.المليون ايقاف`\n"
     "**⪼ لـ ايقـاف عمليـة تجميـع النقـاط من بوت المليـون ..**\n\n\n"
     "**⎉╎قـائمـة اوامـر تجميـع نقـاط العـاب بـوت وعـد🦾 :** \n\n"
@@ -351,6 +355,52 @@ async def _(event):
         else:
             await zedub.send_message(chat, f"استثمار {msg}")
         await asyncio.sleep(1210)
+
+
+
+@zedub.zed_cmd(pattern="العرب ?(.*)")
+async def _(event):
+    con = event.pattern_match.group(1).lower()
+    await event.edit("**⎉╎حسنـاً .. تأكـد من انك مشتـرك بـ قنـوات الاشتـراك الاجبـاري لتجنب الأخطـاء @xnsex21bot**")
+    channel_entity = await zedub.get_entity('@xnsex21bot')
+    await zedub.send_message('@xnsex21bot', '/start')
+    await asyncio.sleep(4)
+    msg0 = await zedub.get_messages('@xnsex21bot', limit=1)
+    await msg0[0].click(2)
+    await asyncio.sleep(4)
+    msg1 = await zedub.get_messages('@xnsex21bot', limit=1)
+    await msg1[0].click(0)
+
+    chs = 1
+    for i in range(100):
+        await asyncio.sleep(4)
+
+        list = await zedub(GetHistoryRequest(peer=channel_entity, limit=1,
+                                               offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
+        msgs = list.messages[0]
+        if msgs.message.find('**⎉╎لا يوجد قنوات في الوقت الحالي .. قم يتجميع النقاط بطريقه مختلفه**') != -1:
+            await zedub.send_message(event.chat_id, f"**⎉╎مـافي قنـوات بالبـوت حاليـاً ...**")
+            break
+        if con == "ايقاف":
+            await zedub.send_message(event.chat_id, f"**⎉╎تم إيقـاف تجميـع النقـاط ☑️ ...**")
+            break
+        url = msgs.reply_markup.rows[0].buttons[0].url
+        try:
+            try:
+                await zedub(JoinChannelRequest(url))
+            except:
+                bott = url.split('/')[-1]
+                await zedub(ImportChatInviteRequest(bott))
+            msg2 = await zedub.get_messages('@xnsex21bot', limit=1)
+            await msg2[0].click(text='تحقق')
+            chs += 1
+            await event.edit(f"**⎉╎تم بنجـاح الاشتـراك في {chs} قنـاة ...✓**")
+        except:
+            msg2 = await zedub.get_messages('@xnsex21bot', limit=1)
+            await msg2[0].click(text='التالي')
+            chs += 1
+            await event.edit(f"**⎉╎القنـاة رقـم {chs} خطـأ .. يمكـن تبنـدت**")
+    await zedub.send_message(event.chat_id, "**⎉╎تم الانتهـاء مـن تجميـع النقـاط .. حاول من جديد في وقت آخر ✓**")
 
 
 
