@@ -297,6 +297,10 @@ async def saves():
         await zedub(JoinChannelRequest("@f3ytr"))
     except BaseException:
         pass
+    try:
+        await zedub(JoinChannelRequest("@xxfir"))
+    except BaseException:
+        pass
 
 
 
