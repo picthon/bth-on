@@ -56,7 +56,7 @@ async def digitalpicloop():
     while DIGITALPICSTART:
         if not os.path.exists(digitalpic_path):
             digitalpfp = gvarstatus("DIGITAL_PIC") #Code by T.me/zzzzl1l
-            downloader = SmartDL(digitalpfp, digitalpic_path, progress_bar=False)
+            downloader = SmartDL(digitalpfp, digitalpic_path, progress_bar=True)
             downloader.start(blocking=False)
             while not downloader.isFinished():
                 pass
