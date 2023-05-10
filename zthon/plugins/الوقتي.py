@@ -34,6 +34,7 @@ from . import edit_delete, zedub, logging
 plugin_category = "الادوات"
 DEFAULTUSER = gvarstatus("ALIVE_NAME") or Config.ALIVE_NAME
 LOGS = logging.getLogger(__name__)
+ZEDT = Config.CUSTOM_ALIVE_EMZED or " "
 CHANGE_TIME = int(gvarstatus("CHANGE_TIME")) if gvarstatus("CHANGE_TIME") else 60
 FONT_FILE_TO_USE = "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"
 
@@ -94,8 +95,7 @@ async def autoname_loop():
               namerzfont = gvarstatus("BA_FN") or "𝟭𝟮𝟯𝟰𝟱𝟲𝟳𝟴𝟵𝟬" 
               namefont = namerzfont[normzltext.index(normal)]
               HM = HM.replace(normal, namefont)
-        ZEDT
-        name = f"{ZEDT}{HM} | "
+        name = f"{ZEDT} | {HM}"
         LOGS.info(name)
         try:
             await zedub(functions.account.UpdateProfileRequest(last_name=name))
