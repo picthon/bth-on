@@ -1,4 +1,4 @@
-#𝙕𝙚𝙙𝙏𝙝𝙤𝙣 ®
+# 𝙍𝙀𝙋𝙏𝙃𝙊𝙉 ®
 
 from datetime import datetime
 from math import sqrt
@@ -131,17 +131,17 @@ IMOGE_ZEDTHON = "❈╎"
 
 
 # =========================================================== #
-#                                                           ZThon                                                                #
+#                                                           Repthon                                                               #
 # =========================================================== #
 STAT_INDICATION = "**❈╎جـارِ جـلب الاحصـائيـات إنتظـر ⅏ . . .**"
-CHANNELS_STR = "𓆩 𝙎𝙊𝙐𝙍𝘾𝞝 R𝙀𝙋𝙏𝙃𝙊𝙉𖠏 **- 🝢 - احصـائيـات جميـع القنـوات** 𓆪\n\n"
-CHANNELS_ADMINSTR = "𓆩 𝙎𝙊𝙐𝙍𝘾𝞝 R𝙀𝙋𝙏𝙃𝙊𝙉𖠏 **- 🝢 - احصـائيـات جميـع القنـوات اشـراف** 𓆪\n\n"
-CHANNELS_OWNERSTR = "𓆩 𝙎𝙊𝙐𝙍𝘾𝞝 R𝙀𝙋𝙏𝙃𝙊𝙉𖠏 **- 🝢 - احصـائيـات جميـع القنـوات ملكيـة** 𓆪\n\n"
-GROUPS_STR = "𓆩 𝙎𝙊𝙐𝙍𝘾𝞝 R𝙀𝙋𝙏𝙃𝙊𝙉𖠏 **- 🝢 - احصـائيـات جميـع المجمـوعـات** 𓆪\n\n"
-GROUPS_ADMINSTR = "𓆩 𝙎𝙊𝙐𝙍𝘾𝞝 R𝙀𝙋𝙏𝙃𝙊𝙉𖠏 **- 🝢 - احصـائيـات جميـع المجمـوعـات اشـراف** 𓆪\n\n"
-GROUPS_OWNERSTR = "𓆩 𝙎𝙊𝙐𝙍𝘾𝞝 R𝙀𝙋𝙏𝙃𝙊𝙉𖠏 **- 🝢 - احصـائيـات جميـع المجمـوعـات ملكيـة** 𓆪\n\n"
+CHANNELS_STR = "𓆩 𝙎𝙊𝙐𝙍𝘾𝞝 𝙍𝙀𝙋𝙏𝙃𝙊𝙉 **- 🝢 - احصـائيـات جميـع القنـوات** 𓆪\n\n"
+CHANNELS_ADMINSTR = "𓆩 𝙎𝙊𝙐𝙍𝘾𝞝 𝙍𝙀𝙋𝙏𝙃𝙊𝙉 **- 🝢 - احصـائيـات جميـع القنـوات اشـراف** 𓆪\n\n"
+CHANNELS_OWNERSTR = "𓆩 𝙎𝙊𝙐𝙍𝘾𝞝 𝙍𝙀𝙋𝙏𝙃𝙊𝙉 **- 🝢 - احصـائيـات جميـع القنـوات ملكيـة** 𓆪\n\n"
+GROUPS_STR = "𓆩 𝙎𝙊𝙐𝙍𝘾𝞝 𝙍𝙀𝙋𝙏𝙃𝙊𝙉 **- 🝢 - احصـائيـات جميـع المجمـوعـات** 𓆪\n\n"
+GROUPS_ADMINSTR = "𓆩 𝙎𝙊𝙐𝙍𝘾𝞝 𝙍𝙀𝙋𝙏𝙃𝙊𝙉 **- 🝢 - احصـائيـات جميـع المجمـوعـات اشـراف** 𓆪\n\n"
+GROUPS_OWNERSTR = "𓆩 𝙎𝙊𝙐𝙍𝘾𝞝 𝙍𝙀𝙋𝙏𝙃𝙊𝙉 **- 🝢 - احصـائيـات جميـع المجمـوعـات ملكيـة** 𓆪\n\n"
 # =========================================================== #
-#                                                           ZThon                                                                #
+#                                                           Repthon                                                               #
 # =========================================================== #
 
 
@@ -255,7 +255,7 @@ async def _(event):
 async def get_users(event):
     legen_ = event.text[10:]
     zedthon_chat = legen_.lower
-    restricted = ["@ZedThon_support", "@ZThon_support"]
+    restricted = ["@Repthon_support", "@Repthon_support"]
     ZTHON = await edit_or_reply(event, f"**❈╎جـارِ اضافـه الاعضـاء مـن  ** {legen_}   **⅏ . . .**")
     if zedthon_chat in restricted:
         return await ZTHON.edit(
@@ -357,7 +357,7 @@ async def stats(event):  # sourcery no-metrics
         unread += dialog.unread_count
     stop_time = time.time() - start_time
     full_name = inline_mention(await event.client.get_me())
-    response = f"𓆩 𝙎𝙊𝙐𝙍𝘾𝞝 R𝙀𝙋𝙏𝙃𝙊𝙉𖠏 **- 🝢 - احصـائيـات {full_name}** 𓆪\n"
+    response = f"𓆩 𝙎𝙊𝙐𝙍𝘾𝞝 𝙍𝙀𝙋𝙏𝙃𝙊𝙉 **- 🝢 - احصـائيـات {full_name}** 𓆪\n"
     response += f"**𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻**\n"
     response += f"**- الخـاص :** {private_chats} \n"
     response += f"   ★ **اشخـاص :** `{private_chats - bots}` \n"
@@ -1202,7 +1202,7 @@ async def _(event):  # sourcery no-metrics
         elif i.status is None:
             n += 1
     if input_str:
-        required_string = """𓆰 𓆩 𝙎𝙊𝙐𝙍𝘾𝞝 R𝙀𝙋𝙏𝙃𝙊𝙉𖠏 **- 🝢 - معـلومـات المجمـوعــه** 𓆪\n 𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻 
+        required_string = """𓆰 𓆩 𝙎𝙊𝙐𝙍𝘾𝞝 𝙍𝙀𝙋𝙏𝙃𝙊𝙉 **- 🝢 - معـلومـات المجمـوعــه** 𓆪\n 𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻 
 ⪼ المطرودين {} / {} المستخدمين
 ⪼ **الحسابات المحذوفه ↫** {}
 ⪼ **اخر ظهور منذ زمن طويل ↫** {}
@@ -1218,7 +1218,7 @@ async def _(event):  # sourcery no-metrics
         await et.edit(required_string.format(c, p, d, y, m, w, o, q, r, b, n))
         await sleep(5)
     await et.edit(
-        """𓆰 𓆩 𝙎𝙊𝙐𝙍𝘾𝞝 R𝙀𝙋𝙏𝙃𝙊𝙉𖠏 **- 🝢 - معـلومـات المجمـوعــه** 𓆪\n 𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻
+        """𓆰 𓆩 𝙎𝙊𝙐𝙍𝘾𝞝 𝙍𝙀𝙋𝙏𝙃𝙊𝙉 **- 🝢 - معـلومـات المجمـوعــه** 𓆪\n 𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻
 ⪼ **العدد ↫ {} **مستخدماً
 ⪼ **الحسابات المحذوفه ↫** {}
 ⪼ **اخر ظهور منذ زمن طويل ↫** {}
@@ -1373,7 +1373,7 @@ async def count(event):
         else:
             print(d)
 
-    result += f"𓆩 𝙎𝙊𝙐𝙍𝘾𝞝 𝙕𝞝𝘿 **- 🝢 - احصـائيـات الحسـاب** 𓆪\n"
+    result += f"𓆩 𝙎𝙊𝙐𝙍𝘾𝞝 𝙍𝙀𝙋𝙏𝙃𝙊𝙉 **- 🝢 - احصـائيـات الحسـاب** 𓆪\n"
     result += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
     result += f"**⌔╎المستخدمون :**\t**{u}**\n"
     result += f"**⌔╎المجموعات :**\t**{g}**\n"
