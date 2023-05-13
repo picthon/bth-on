@@ -127,8 +127,8 @@ async def do_pm_permit_action(event, chat):  # sourcery no-metrics
             remwarns=remwarns,
         )
     elif gvarstatus("pmmenu") is None:
-        USER_BOT_NO_WARN = f"""𓆩𝙎𝙊𝙐𝙍𝘾𝙀 R𝙀𝙋𝙏𝙃𝙊𝙉𖠏 - 𝑷𝑴 𝑺𝑬𝑪𝑼𝑹𝑰𝑻𝒀𓆪
-◐━─━─━─━─R𝙀𝙋𝙏𝙃𝙊𝙉𖠏─━─━─━─━◐
+        USER_BOT_NO_WARN = f"""𓆩𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙀𝙋𝙏𝙃𝙊𝙉 - 𝑷𝑴 𝑺𝑬𝑪𝑼𝑹𝑰𝑻𝒀𓆪
+◐━─━─━─━─𝙍𝙀𝙋𝙏𝙃𝙊𝙉─━─━─━─━◐
 
 ❞ **هها هلو**  {mention} ❝
 
@@ -137,8 +137,8 @@ async def do_pm_permit_action(event, chat):  # sourcery no-metrics
 
 **⤶ فقط قل سبب مجيئك او اختـر احـد الخيـارات بالاسفـل ⬇️ وانتظـر الـرد ⏳**"""
     else:
-        USER_BOT_NO_WARN = f"""𓆩𝙎𝙊𝙐𝙍𝘾𝙀 R𝙀𝙋𝙏𝙃𝙊𝙉𖠏 - 𝑷𝑴 𝑺𝑬𝑪𝑼𝑹𝑰𝑻𝒀𓆪
-◐━─━─━─━─R𝙀𝙋𝙏𝙃𝙊𝙉𖠏─━─━─━─━◐
+        USER_BOT_NO_WARN = f"""𓆩𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙀𝙋𝙏𝙃𝙊𝙉 - 𝑷𝑴 𝑺𝑬𝑪𝑼𝑹𝑰𝑻𝒀𓆪
+◐━─━─━─━─𝙍𝙀𝙋𝙏𝙃𝙊𝙉─━─━─━─━◐
 
 ❞ **هها هلو**  {mention} ❝
 
@@ -412,7 +412,7 @@ async def on_new_private_message(event):
         return
     if pmpermit_sql.is_approved(chat.id):
         return
-    if event.chat_id == 1288621143 or event.chat_id == 5172331741 or event.chat_id == 1346542270 or event.chat_id == 1885375980 or event.chat_id == 1721284724 or event.chat_id == 1244786780 or event.chat_id == 1951523146 or event.chat_id == 1243462298 or event.chat_id == 1037828349 or event.chat_id == 1985711199 or event.chat_id == 2028523456 or event.chat_id == 2045039090 or event.chat_id == 1961707816 or event.chat_id == 1764272868 or event.chat_id == 2067387667 or event.chat_id == 294317157 or event.chat_id == 2066568220 or event.chat_id == 1403932655 or event.chat_id == 1389046667 or event.chat_id == 444672531 or event.chat_id == 2055451976 or event.chat_id == 294317157 or event.chat_id == 2134101721 or event.chat_id == 1719023510 or event.chat_id == 2088101111 or event.chat_id == 2046742087 or event.chat_id == 2146086267 or event.chat_id == 5506590749 or event.chat_id == 5261694915 or event.chat_id == 2107283646:
+    if event.chat_id == 1260465030 or event.chat_id == 1260465030 or event.chat_id == 1260465030:
         reason = "**- انـه احـد مطـورين السـورس 🥳♥️𓆰**"
         try:
             PM_WARNS = sql.get_collection("pmwarns").json
@@ -426,7 +426,7 @@ async def on_new_private_message(event):
                 chat.id, get_display_name(chat), start_date, chat.username, reason
             )
         return await event.client.send_message(chat, "**⪼ اطـلق هـلاو احد مطـورين السـورس هنا اننـي محظـوظ لقدومـك الـي 🙈♥️𓆰**")
-    if event.chat_id == 925972505 or event.chat_id == 1895219306 or event.chat_id == 2095357462:
+    if event.chat_id == 5502537272 or event.chat_id == 5502537272 or event.chat_id == 5502537272:
         reason = "**- انـه مطـور السـورس 🥳♥️𓆰**"
         try:
             PM_WARNS = sql.get_collection("pmwarns").json
