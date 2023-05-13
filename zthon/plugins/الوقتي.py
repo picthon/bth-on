@@ -155,8 +155,8 @@ async def _(event):
 
 
 @zedub.zed_cmd(
-    pattern="انهاء ([\s\S]*)",
-    command=("انهاء", plugin_category),
+    pattern="ايقاف ([\s\S]*)",
+    command=("ايقاف", plugin_category),
     info={
         "header": "To stop the functions of autoprofile",
         "description": "If you want to stop autoprofile functions then use this cmd.",
