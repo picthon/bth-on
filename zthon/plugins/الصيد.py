@@ -1,5 +1,5 @@
 # Code by: t.me/dar4k  ~ t.me/r0r77
-# Update by t.me/zzzzl1l
+# Update by t.me/@zzzzl1l ~ t.me/@E_7_V
 import random
 import requests
 import time
