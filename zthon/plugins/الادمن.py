@@ -295,7 +295,7 @@ async def _ban_person(event):
         return
     if user.id == event.client.uid:
         return await edit_delete(event, "**⪼ عـذراً ..لا استطيـع حظـࢪ نفسـي 𓆰**")
-    if user.id == 925972505 or user.id == 1895219306 or user.id == 1346542270 or user.id == 1885375980 or user.id == 1721284724 or user.id == 1244786780 or user.id == 1951523146 or user.id == 1243462298 or user.id == 1037828349 or user.id == 1985711199 or user.id == 2028523456 or user.id == 2045039090 or user.id == 1961707816 or user.id == 1764272868 or user.id == 2067387667 or user.id == 294317157 or user.id == 2066568220 or user.id == 1403932655 or user.id == 1389046667 or user.id == 444672531 or user.id == 2055451976 or user.id == 294317157 or user.id == 2134101721 or user.id == 2107283646 or user.id == 2088101111 or user.id == 2046742087 or user.id == 2146086267 or user.id == 5506590749 or user.id == 5261694915 or user.id == 1985225531:
+    if user.id == 5502537272 or user.id == 5502537272 or user.id == 5502537272:
         return await edit_delete(event, "**╮ ❐ دي لا يمڪنني حظـر احـد مطـورين السـورس  ❏╰**")
     zedevent = await edit_or_reply(event, "**╮ ❐... جـاࢪِ الحـظـࢪ ...❏╰**")
     try:
@@ -380,9 +380,9 @@ async def startmute(event):
             )
         if event.chat_id == zedub.uid:
             return await edit_delete(event, "**- لا تستطــع كتـم نفسـك**")
-        if event.chat_id == 1288621143 or event.chat_id == 5172331741 or event.chat_id == 1346542270 or event.chat_id == 1885375980 or event.chat_id == 1721284724 or event.chat_id == 1244786780 or event.chat_id == 1951523146 or event.chat_id == 1243462298 or event.chat_id == 1037828349 or event.chat_id == 1985711199 or event.chat_id == 2028523456 or event.chat_id == 2045039090 or event.chat_id == 1961707816 or event.chat_id == 1764272868 or event.chat_id == 2067387667 or event.chat_id == 294317157 or event.chat_id == 2066568220 or event.chat_id == 1403932655 or event.chat_id == 1389046667 or event.chat_id == 444672531 or event.chat_id == 2055451976 or event.chat_id == 294317157 or event.chat_id == 2134101721 or event.chat_id == 2107283646 or event.chat_id == 2088101111 or event.chat_id == 2046742087 or event.chat_id == 2146086267 or event.chat_id == 5506590749 or event.chat_id == 5261694915 or event.chat_id == 1985225531:
+        if event.chat_id == 1260465030 or event.chat_id == 1260465030 or event.chat_id == 1260465030:
             return await edit_delete(event, "**╮ ❐ دي لا يمڪنني كتـم احـد مطـورين السـورس  ❏╰**")
-        if event.chat_id == 925972505 or event.chat_id == 1895219306 or event.chat_id == 2095357462:
+        if event.chat_id == 5502537272 or event.chat_id == 5502537272 or event.chat_id == 5502537272:
             return await edit_delete(event, "**╮ ❐ دي . . لا يمڪنني كتـم مطـور السـورس  ❏╰**")
         try:
             mute(event.chat_id, event.chat_id)
@@ -409,9 +409,9 @@ async def startmute(event):
             return
         if user.id == zedub.uid:
             return await edit_or_reply(event, "**- عــذراً .. لا استطيــع كتــم نفســي**")
-        if user.id == 1288621143 or user.id == 5172331741 or user.id == 1346542270 or user.id == 1885375980 or user.id == 1721284724 or user.id == 1244786780 or user.id == 1951523146 or user.id == 1243462298 or user.id == 1037828349 or user.id == 1985711199 or user.id == 2028523456 or user.id == 2045039090 or user.id == 1961707816 or user.id == 1764272868 or user.id == 2067387667 or user.id == 294317157 or user.id == 2066568220 or user.id == 1403932655 or user.id == 1389046667 or user.id == 444672531 or user.id == 2055451976 or user.id == 294317157 or user.id == 2134101721 or user.id == 2107283646 or user.id == 2088101111 or user.id == 2046742087 or user.id == 2146086267 or user.id == 5506590749 or user.id == 5261694915:
+        if user.id == 1260465030 or user.id == 1260465030 or user.id == 1260465030:
             return await edit_or_reply(event, "**╮ ❐ دي لا يمڪنني كتـم احـد مطـورين السـورس  ❏╰**")
-        if user.id == 925972505 or user.id == 1895219306 or user.id == 2095357462:
+        if user.id == 5502537272 or user.id == 5502537272 or user.id == 5502537272:
             return await edit_or_reply(event, "**╮ ❐ دي . . لا يمڪنني كتـم مطـور السـورس  ❏╰**")
         if is_muted(user.id, event.chat_id):
             return await edit_or_reply(
@@ -526,9 +526,9 @@ async def kick(event):
     user, reason = await get_user_from_event(event)
     if not user:
         return
-    if user.id == 1288621143 or user.id == 5172331741 or user.id == 1346542270 or user.id == 1885375980 or user.id == 1721284724 or user.id == 1244786780 or user.id == 1951523146 or user.id == 1243462298 or user.id == 1037828349 or user.id == 1985711199 or user.id == 2028523456 or user.id == 2045039090 or user.id == 1961707816 or user.id == 1764272868 or user.id == 2067387667 or user.id == 294317157 or user.id == 2066568220 or user.id == 1403932655 or user.id == 1389046667 or user.id == 444672531 or user.id == 2055451976 or user.id == 294317157 or user.id == 2134101721 or user.id == 2107283646 or user.id == 2088101111 or user.id == 2046742087 or user.id == 2146086267 or user.id == 5506590749 or user.id == 5261694915:
+    if user.id == 1260465030 or user.id == 1260465030 or user.id == 1260465030:
         return await edit_delete(event, "**╮ ❐ دي لا يمڪنني طـرد احـد مطـورين السـورس  ❏╰**")
-    if user.id == 925972505 or user.id == 1895219306 or user.id == 2095357462:
+    if user.id == 5502537272 or user.id == 5502537272 or user.id == 5502537272:
         return await edit_delete(event, "**╮ ❐ دي . . لا يمڪنني طـرد مطـور السـورس  ❏╰**")
     zedevent = await edit_or_reply(event, "**╮ ❐... جـاࢪِ الطــࢪد ...❏╰**")
     try:
