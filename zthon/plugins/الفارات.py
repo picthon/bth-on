@@ -160,7 +160,8 @@ async def variable(event):
         variable = "DEFAULT_BIO"
         await asyncio.sleep(1.5)
         if gvarstatus("DEFAULT_BIO") is None:
-            await zed.edit("**✾╎تم تغييـر {} بنجـاح ☑️**\n**✾╎البـايـو الجـديـد** \n {} \n\n**✾╎الان قـم بـ ارسـال الامـر ↶** `.البايو تلقائي` **لـ التحقـق مـن البايـو . .**".format(input_str, vinfo))
+        addgvar(variable, vinfo)     
+           await zed.edit("**✾╎تم تغييـر {} بنجـاح ☑️**\n**✾╎البـايـو الجـديـد** \n {} \n\n**✾╎الان قـم بـ ارسـال الامـر ↶** `.البايو تلقائي` **لـ التحقـق مـن البايـو . .**".format(input_str, vinfo))
         else:
             await zed.edit("**✾╎تم اضـافه {} بنجـاح ☑️**\n**✾╎البـايـو المضـاف** \n {} \n\n**✾╎الان قـم بـ ارسـال الامـر ↶** `.البايو تلقائي` **لـ التحقـق مـن البايـو . .**".format(input_str, vinfo))
         addgvar(variable, vinfo)
