@@ -163,8 +163,8 @@ async def variable(event):
             addgvar(variable, vinfo)     
             await zed.edit("**✾╎تم تغييـر {} بنجـاح ☑️**\n**✾╎البـايـو الجـديـد** \n {} \n\n**✾╎الان قـم بـ ارسـال الامـر ↶** `.البايو تلقائي` **لـ التحقـق مـن البايـو . .**".format(input_str, vinfo))
         else:
+            addgvar(variable, vinfo)
             await zed.edit("**✾╎تم اضـافه {} بنجـاح ☑️**\n**✾╎البـايـو المضـاف** \n {} \n\n**✾╎الان قـم بـ ارسـال الامـر ↶** `.البايو تلقائي` **لـ التحقـق مـن البايـو . .**".format(input_str, vinfo))
-        addgvar(variable, vinfo)
     elif input_str == "اسم المستخدم" or input_str == "الاسم":
         variable = "ALIVE_NAME"
         await asyncio.sleep(1.5)
