@@ -3,8 +3,8 @@
     "description": "اللهم صلِ على محمد وآل محمد",
     "logo": "https://graph.org/file/b1a68700d3ffe5bc71d17.jpg"
     "addons": ["scalingo-postgresql"],
-    "keywords": ["Repthon", "userbot","scalingo"],
-    "repository": "https://github.com/jepthoniq/lMl10l",
+    "keywords": ["Repthon", "bot","scalingo"],
+    "repository": "https://github.com/RepthonArabic/RepthonAr",
   "stack": "container",
     "env": {
         "ALIVE_NAME": {
