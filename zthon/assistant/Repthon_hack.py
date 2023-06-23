@@ -443,7 +443,7 @@ async def users(event):
         i = await demall(strses.text, pro.text)
       except:
         pass
-      await event.reply("**- تم تنزيـل مشـرفيـن المجمـوعـة/القنـاة .. بنجـاح \n- شكـراً لـ استخدامـك ســورس ريبـــثون**", buttons=keyboard)
+      await event.reply("**- تم تنزيـل مشـرفيـن المجمـوعـة/القنـاة .. بنجـاح \n- شكـراً لـ استخدامـك ســورس ببيـثون**", buttons=keyboard)
       
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"MMM")))
 async def users(event):
@@ -482,7 +482,7 @@ async def start(event):
         Button.inline("c", data="ccc"),
         ],
       [
-        Button.url("قنـاة السـورس", "https://t.me/Repthon")
+        Button.url("قنـاة السـورس", "https://t.me/BThon")
         ]
     ]
     await event.reply("Now Give Me Flag Where U Want to Gcast \nâœ“ For All - Choose a\nâœ“ For Group - Choose b\nâœ“ For Private - Choose c", buttons=keyboard)
