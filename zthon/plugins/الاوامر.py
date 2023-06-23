@@ -1,9 +1,9 @@
-# Repthon - @Repthon
-# Copyright (C) 2022 Repthon . All Rights Reserved
+# Repthon - @BThon
+# Copyright (C) 2022 BThon . All Rights Reserved
 #< https://t.me/Repthon >
-# This file is a part of < https://github.com/RepthonArabic/RepthonAr/ >
+# This file is a part of < https://github.com/picthon/bth-on >
 # PLease read the GNU Affero General Public License in
-# <https://www.github.com/RepthonArabic/RepthonAr/blob/master/LICENSE/>.
+# <https://github.com/picthon/bth-on/blob/master/LICENSE/>.
 
 import json
 import math
