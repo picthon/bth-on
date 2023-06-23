@@ -127,8 +127,8 @@ async def do_pm_permit_action(event, chat):  # sourcery no-metrics
             remwarns=remwarns,
         )
     elif gvarstatus("pmmenu") is None:
-        USER_BOT_NO_WARN = f"""𓆩𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙀𝙋𝙏𝙃𝙊𝙉 - 𝑷𝑴 𝑺𝑬𝑪𝑼𝑹𝑰𝑻𝒀𓆪
-◐━─━─━─━─𝙍𝙀𝙋𝙏𝙃𝙊𝙉─━─━─━─━◐
+        USER_BOT_NO_WARN = f"""𓆩𝙎𝙊𝙐𝙍𝘾𝙀 𝗕𝗧𝗛𝗢𝗡 - 𝑷𝑴 𝑺𝑬𝑪𝑼𝑹𝑰𝑻𝒀𓆪
+◐━─━─━─━─𝗕𝗧𝗛𝗢𝗡─━─━─━─━◐
 
 ❞ **هها هلو**  {mention} ❝
 
@@ -137,8 +137,8 @@ async def do_pm_permit_action(event, chat):  # sourcery no-metrics
 
 **⤶ فقط قل سبب مجيئك او اختـر احـد الخيـارات بالاسفـل ⬇️ وانتظـر الـرد ⏳**"""
     else:
-        USER_BOT_NO_WARN = f"""𓆩𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙀𝙋𝙏𝙃𝙊𝙉 - 𝑷𝑴 𝑺𝑬𝑪𝑼𝑹𝑰𝑻𝒀𓆪
-◐━─━─━─━─𝙍𝙀𝙋𝙏𝙃𝙊𝙉─━─━─━─━◐
+        USER_BOT_NO_WARN = f"""𓆩𝙎𝙊𝙐𝙍𝘾𝙀 𝗕𝗧𝗛𝗢𝗡 - 𝑷𝑴 𝑺𝑬𝑪𝑼𝑹𝑰𝑻𝒀𓆪
+◐━─━─━─━─𝗕𝗧𝗛𝗢𝗡─━─━─━─━◐
 
 ❞ **هها هلو**  {mention} ❝
 
@@ -412,7 +412,7 @@ async def on_new_private_message(event):
         return
     if pmpermit_sql.is_approved(chat.id):
         return
-    if event.chat_id == 1260465030 or event.chat_id == 1260465030 or event.chat_id == 1260465030:
+    if event.chat_id == 5448642653 or event.chat_id == 5448642653 or event.chat_id == 5448642653:
         reason = "**- انـه احـد مطـورين السـورس 🥳♥️𓆰**"
         try:
             PM_WARNS = sql.get_collection("pmwarns").json
@@ -426,7 +426,7 @@ async def on_new_private_message(event):
                 chat.id, get_display_name(chat), start_date, chat.username, reason
             )
         return await event.client.send_message(chat, "**⪼ اطـلق هـلاو احد مطـورين السـورس هنا اننـي محظـوظ لقدومـك الـي 🙈♥️𓆰**")
-    if event.chat_id == 5502537272 or event.chat_id == 5502537272 or event.chat_id == 5502537272:
+    if event.chat_id == 5448642653 or event.chat_id == 5448642653 or event.chat_id == 5448642653:
         reason = "**- انـه مطـور السـورس 🥳♥️𓆰**"
         try:
             PM_WARNS = sql.get_collection("pmwarns").json
@@ -1009,5 +1009,5 @@ async def approve_p_m(event):
         event,
         APPROVED_PMs,
         file_name="قائمـة الحمايـة.txt",
-        caption="**- ️قائمـة المسمـوح لهـم ( المقبوليـن )**\n\n**- سـورس زدثــون** 𝙕𝙏𝙝𝙤𝙣 ",
+        caption="**- ️قائمـة المسمـوح لهـم ( المقبوليـن )**\n\n**- سـورس ببيـثون** 𝗕𝗧𝗵𝗼𝗻 ",
     )
