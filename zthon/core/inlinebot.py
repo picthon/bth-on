@@ -31,8 +31,8 @@ LOGS = logging.getLogger(__name__)
 
 BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)\]\<buttonurl:(?:/{0,2})(.+?)(:same)?\>)")
 MEDIA_PATH_REGEX = re.compile(r"(:?\<\bmedia:(:?(?:.*?)+)\>)")
-ZEDLOGO = "https://telegra.ph/file/e45d01cc4a8b66cba94ee.jpg"
-MALATH_PIC = "https://telegra.ph/file/e45d01cc4a8b66cba94ee.jpg"
+ZEDLOGO = "https://graph.org/file/a4001ab7853f1e435b2c3.jpg"
+MALATH_PIC = "https://graph.org/file/a4001ab7853f1e435b2c3.jpg"
 tr = Config.COMMAND_HAND_LER
 
 
@@ -55,7 +55,7 @@ def ibuild_keyboard(buttons):
 
 
 def main_menu():
-    malathy = f"**🖥┊لـوحـة اوامـر 𝑹𝑬𝑷𝑻𝑯𝑶𝑵🜑 الشفافـه**\
+    malathy = f"**🖥┊لـوحـة اوامـر 𝐁𝐓𝐇𝐎𝐍 الشفافـه**\
         \n**🧑🏻‍💻┊المستخـدم ↶** {mention}"
     if Config.OLDZED:
         buttons = [
@@ -256,11 +256,11 @@ async def inline_handler(event):  # sourcery no-metrics
             buttons = [
                 (
                     Button.inline("Stats", data="stats"),
-                    Button.url("R𝙀𝙋𝙏𝙃𝙊𝙉𖠏™ 𓅛", "https://t.me/Repthon"),
+                    Button.url("𝐁𝐓𝐇𝐎𝐍", "https://t.me/BThon"),
                 )
             ]
-            ALIVE_PIC = gvarstatus("ALIVE_PIC") or "https://telegra.ph/file/e45d01cc4a8b66cba94ee.jpg"
-            IALIVE_PIC = gvarstatus("IALIVE_PIC") or "https://telegra.ph/file/e45d01cc4a8b66cba94ee.jpg"
+            ALIVE_PIC = gvarstatus("ALIVE_PIC") or "https://graph.org/file/a4001ab7853f1e435b2c3.jpg"
+            IALIVE_PIC = gvarstatus("IALIVE_PIC") or "https://graph.org/file/a4001ab7853f1e435b2c3.jpg"
             if IALIVE_PIC:
                 ZED = [x for x in IALIVE_PIC.split()]
                 PIC = list(ZED)
@@ -606,10 +606,10 @@ async def inline_handler(event):  # sourcery no-metrics
     else:
         buttons = [
             (
-                Button.url("قنـاة السـورس", "https://t.me/Repthon"),
+                Button.url("قنـاة السـورس", "https://t.me/BThon"),
                 Button.url(
                     "مطـور السـورس",
-                    "https://t.me/ZQ_LO",
+                    "https://t.me/a_t_9",
                 ),
             )
         ]
@@ -623,9 +623,9 @@ async def inline_handler(event):  # sourcery no-metrics
         result = types.InputBotInlineResult(
             id=str(uuid4()),
             type="photo",
-            title="𝑹𝑬𝑷𝑻𝑯𝑶𝑵🜑 𓅛",
+            title="𝐁𝐓𝐇𝐎𝐍",
             description="روابـط التنصـيب",
-            url="https://t.me/Repthon/24",
+            url="https://t.me/BThon/7",
             thumb=photo,
             content=photo,
             send_message=types.InputBotInlineMessageMediaAuto(
