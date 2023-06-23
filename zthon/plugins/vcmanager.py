@@ -1,4 +1,4 @@
-#الملف تابع لـ سورس ريــبــثــون
+#الملف تابع لـ سورس بيثون
 from telethon import functions
 from telethon.errors import ChatAdminRequiredError, UserAlreadyInvitedError
 from telethon.tl.types import Channel, Chat, User
