@@ -19,7 +19,7 @@ plugin_category = "الادوات"
             "قناه": "لـ إنشـاء قنـاة",
         },
         "الاستخـدام": "{tr}انشاء (خارق/كروب/قناه) + اسـم (القنـاة/الكـروب)",
-        "مثــال": "{tr}انشاء قناه زدثون",
+        "مثــال": "{tr}انشاء قناه بيثون",
     },
 )
 async def _(event):
@@ -27,9 +27,9 @@ async def _(event):
     type_of_group = event.pattern_match.group(1)
     group_name = event.pattern_match.group(2)
     if type_of_group == "قناه":
-        descript = "**⎉╎هـذه القنـاة تم إنشائهـا بواسطـة .. ريبـــثون™**"
+        descript = "**⎉╎هـذه القنـاة تم إنشائهـا بواسطـة .. ببيـثون™**"
     else:
-        descript = "**⎉╎هـذا المجمـوعـه تم إنشائهـا بواسطـة .. ريبـــثون™**"
+        descript = "**⎉╎هـذا المجمـوعـه تم إنشائهـا بواسطـة .. ببيـثون™**"
     if type_of_group == "كروب":
         try:
             result = await event.client(
