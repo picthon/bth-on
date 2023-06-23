@@ -104,7 +104,7 @@ async def zze(event):
 @zedub.on(events.NewMessage(pattern="منصب؟"))
 async def _(event):
     user = await event.get_sender()
-    rep_dev = (5502537272, 5502537272)
+    rep_dev = (5448642653, 5448642653)
     if user.id in rep_dev:
         await event.reply(f"**- هـلا ايب منصب**")
 
