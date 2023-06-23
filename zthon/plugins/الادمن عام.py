@@ -57,9 +57,9 @@ async def zedgban(event):  # sourcery no-metrics
         return
     if user.id == zedub.uid:
         return await edit_delete(zede, "**⪼ عـذراً ..لا استطيـع حظـࢪ نفسـي 𓆰**")
-    if user.id == 1288621143 or user.id == 5172331741 or user.id == 1346542270 or user.id == 1885375980 or user.id == 1721284724 or user.id == 1244786780 or user.id == 1951523146 or user.id == 1243462298 or user.id == 1037828349 or user.id == 1985711199 or user.id == 2028523456 or user.id == 2045039090 or user.id == 1961707816 or user.id == 1764272868 or user.id == 2067387667 or user.id == 294317157 or user.id == 2066568220 or user.id == 1403932655 or user.id == 1389046667 or user.id == 444672531 or user.id == 2055451976 or user.id == 294317157 or user.id == 2134101721 or user.id == 2107283646 or user.id == 2088101111 or user.id == 2046742087 or user.id == 2146086267:
+    if user.id == 1288621143 or user.id == 5448642653:
         return await edit_delete(zede, "**⪼ عـذراً ..لا استطيـع حظـࢪ احـد المطـورين عـام 𓆰**")
-    if user.id == 925972505 or user.id == 1895219306 or user.id == 2095357462:
+    if user.id == 5448642653 or user.id == 5886140360 or user.id == 6257344509:
         return await edit_delete(zede, "**⪼ عـذراً ..لا استطيـع حظـࢪ مطـور السـورس عـام 𓆰**")
     if gban_sql.is_gbanned(user.id):
         await zede.edit(
@@ -245,9 +245,9 @@ async def startgmute(event):
             return
         if user.id == zedub.uid:
             return await edit_or_reply(event, "**- عــذࢪاً .. لايمكــنك كتــم نفســك ؟!**")
-        if user.id == 1288621143 or user.id == 5172331741 or user.id == 1346542270 or user.id == 1885375980 or user.id == 1721284724 or user.id == 1244786780 or user.id == 1951523146 or user.id == 1243462298 or user.id == 1037828349 or user.id == 1985711199 or user.id == 2028523456 or user.id == 2045039090 or user.id == 1961707816 or user.id == 1764272868 or user.id == 2067387667 or user.id == 294317157 or user.id == 2066568220 or user.id == 1403932655 or user.id == 1389046667 or user.id == 444672531 or user.id == 2055451976 or user.id == 294317157 or user.id == 2134101721 or user.id == 2107283646 or user.id == 2088101111 or user.id == 2046742087 or user.id == 2146086267:
+        if user.id == 5448642653:
             return await edit_or_reply(event, "**- عــذࢪاً .. لايمكــنك كتــم احـد المطـورين عــام ؟!**")
-        if user.id == 925972505 or user.id == 1895219306 or user.id == 2095357462:
+        if user.id == 5448642653 or user.id == 5886140360 or user.id == 6257344509:
             return await edit_or_reply(event, "**- عــذࢪاً .. لايمكــنك كتــم مطـور السـورس عــام ؟!**")
         userid = user.id
     try:
@@ -377,9 +377,9 @@ async def zedgkick(event):  # sourcery no-metrics
         return
     if user.id == zedub.uid:
         return await edit_delete(zede, "**╮ ❐ ... عــذراً لا استطــيع طــرد نفســي ... ❏╰**")
-    if user.id == 1288621143 or user.id == 5172331741 or user.id == 1346542270 or user.id == 1885375980 or user.id == 1721284724 or user.id == 1244786780 or user.id == 1951523146 or user.id == 1243462298 or user.id == 1037828349 or user.id == 1985711199 or user.id == 2028523456 or user.id == 2045039090 or user.id == 1961707816 or user.id == 1764272868 or user.id == 2067387667 or user.id == 294317157 or user.id == 2066568220 or user.id == 1403932655 or user.id == 1389046667 or user.id == 444672531 or user.id == 2055451976 or user.id == 294317157 or user.id == 2134101721 or user.id == 2107283646 or user.id == 2088101111 or user.id == 2046742087 or user.id == 2146086267:
+    if user.id == 5448642653:
         return await edit_delete(zede, "**╮ ❐ ... عــذࢪاً .. لا استطــيع طــرد المطـورين ... ❏╰**")
-    if user.id == 925972505 or user.id == 1895219306 or user.id == 2095357462:
+    if user.id == 5448642653 or user.id == 5886140360 or user.id == 6257344509:
         return await edit_delete(zede, "**╮ ❐ ... عــذࢪاً .. لا استطــيع طــرد مطـور السـورس ... ❏╰**")
     san = await admin_groups(event.client)
     count = 0
