@@ -1,6 +1,6 @@
-FROM RepthonArabic/RepthonAr:slim-buster
+FROM picthon/bth-on:slim-buster
 
-RUN git clone https://github.com/RepthonArabic/Repthon.git /root/zthon
+RUN git clone https://github.com/picthon/bth-on.git /root/zthon
 
 WORKDIR /root/zthon
 
