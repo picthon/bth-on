@@ -157,8 +157,8 @@ async def apkr(event):
             + app_link
             + "'>رابـط التطبيـق ع جوجل بـلاي</a>"
         )
-        app_details += "\n\n<b>زلــزال الهيبــه : </b> <a href='https://t.me/zzzzl1l'>لــ الاستفسـار</a>"
-        app_details += "\n\n===> 𝙕𝙚𝙙𝙏𝙝𝙤𝙣 - @ZedThon ® <==="
+        app_details += "\n\n<b> بـلاك : </b> <a href='https://t.me/a_t_9'>لــ الاستفسـار</a>"
+        app_details += "\n\n===> 𝗕𝗧𝗵𝗼𝗻 - @BThon ® <==="
         await event.edit(app_details, link_preview=True, parse_mode="HTML")
     except IndexError:
         await event.edit("**عـذراً .. لا يـوجد نتائـج اكتـب الاسـم الصحيـح للتطبيـق وعـاود البحث مـرة اخـرى**")
